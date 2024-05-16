@@ -75,7 +75,7 @@ static Interpret_Result run()
         }
         case OP_RETURN:
         {
-            print_value(pop());
+            //print_value(pop());
             printf("\n");
             return INTERPRET_OK;
         }

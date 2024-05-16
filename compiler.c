@@ -16,6 +16,7 @@ void compile(const char *source)
         }
         else
         {
+
             printf(" | ");
         }
         printf("%2d '%.*s'\n", token.type, token.length, token.start);
