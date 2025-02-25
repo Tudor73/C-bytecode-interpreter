@@ -1,5 +1,5 @@
-build: 
-	gcc chunk.c -Wall memory.c value.c vm.c debug.c compiler.c scanner.c main.c -o target/main 
+CFLAGS=-Wall -Werror -std=c11 -pedantic -ggdb
 
-run: 
-	target/main
+
+build: main.c 
+	gcc $(CFLAGS) -o target/output main.c chunk.c memory.c  
