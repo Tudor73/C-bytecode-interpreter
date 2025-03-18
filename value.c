@@ -1,6 +1,7 @@
 #include "value.h"
 #include "memory.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 void init_value_array(ValueArray *array)
 {
@@ -25,4 +26,9 @@ void free_value_array(ValueArray *array)
 {
     reallocate(array->values, sizeof(uint8_t) * array->capacity, 0);
     init_value_array(array);
+}
+
+void print_value(Value value)
+{
+    printf("%g", value);
 }
